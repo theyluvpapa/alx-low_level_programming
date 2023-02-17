@@ -4,7 +4,9 @@
 /**
  * main - Entry point
  *
- * return: Always 0 (Success)
+ * Generates random number and prints whether it is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
