@@ -5,10 +5,8 @@
  * Description: Computes absolute value of integer
  * Return: 0
  */
-int _abs(int)
+int _abs(int num)
 {
-	int num;
-
 	if (num >= 0)
 	{
 		return (num);
