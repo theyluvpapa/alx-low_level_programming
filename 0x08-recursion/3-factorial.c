@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * factorial - function returns factorial of number input
  * @n: Input num
