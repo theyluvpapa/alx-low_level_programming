@@ -11,9 +11,13 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	if (n == 0 || n == 1)
+	if (n == 0)
 	{
-		return (n);
+		return (0);
+	}
+	if (n == 1)
+	{
+		return (1);
 	}
 
 	return (find_sqrt(n, 1, n));
@@ -34,7 +38,7 @@ int find_sqrt(int n, int start, int end)
 	{
 		return (-1);
 	}
-	
+
 	mid = (start + end) / 2;
 
 	if (mid * mid == n)
