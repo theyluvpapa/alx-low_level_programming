@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * _pow_recursion - returns value of x raised to y
  * @x: fixed value
