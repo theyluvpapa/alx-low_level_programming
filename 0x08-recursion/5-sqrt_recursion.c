@@ -1,24 +1,4 @@
 #include "main.h"
-int find_sqrt(int n, int start, int end);
-/**
- * _sqrt_recursion - returns natural sqr root of num
- * @n: number input
- * Return: sqr root of n / -1 if n does not have a natural sqr root
- */
-int _sqrt_recursion(int n)
-{
-	if (n < 0)
-	{
-		return (-1);
-	}
-	if (n == 1)
-	{
-		return (1);
-	}
-
-	return (find_sqrt(n, 1, n));
-}
-
 /**
  * find_sqrt - function to recursively find sqr root
  * @n: the number to find the square root of
@@ -49,4 +29,23 @@ int find_sqrt(int n, int start, int end)
 	{
 		return (find_sqrt(n, start, mid - 1));
 	}
+}
+
+
+/**
+ * _sqrt_recursion - returns natural sqr root of num
+ * @n: number input
+ * Return: sqr root of n / -1 if n does not have a natural sqr root
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+	{
+		return (-1);
+	}
+	if (n == 1)
+	{
+		return (1);
+	}
+	return (find_sqrt(n, 1, n));
 }
